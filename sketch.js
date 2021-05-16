@@ -24,9 +24,11 @@ function setup(){
 function draw(){
 
     if(bg){
+        console.log("YES");
         background(bg);
     }    
     else{
+        console.log("NO");
         background(255);
     }
     if(hour < 12){
@@ -59,46 +61,57 @@ async function getBackgroundImg(){
 
     // add conditions to change the background images from sunrise to sunset    
     if(hour >= 01 && hour <= 04 ){
+        console.log(1);
         bg = loadImage("sunrise1.png")
     }
 
     else if(hour >= 04 && hour <= 06){
+        console.log(2);
         bg = loadImage("sunrise2.png")
     }
 
     else if(hour >= 06 && hour <= 08){
+        console.log(3);
         bg = loadImage("sunrise3.png")
     }
 
     else if(hour >= 08 && hour <= 10){
+        console.log(4);
         bg = loadImage("sunrise4.png")
     }
 
     else if(hour >= 10 && hour <= 12){
+        console.log(5);
         bg = loadImage("sunrise5.png")
     }
 
     else if(hour >= 12 && hour <= 14){
+        console.log(6);
         bg = loadImage("sunrise6.png")
     }
 
     else if(hour >= 14 && hour <= 16){
+        console.log(7);
         bg = loadImage("sunset7.png")
     }
 
     else if(hour >= 16 && hour <= 18){
+        console.log(8);
         bg = loadImage("sunset8.png")
     }
 
     else if(hour >=  18 && hour <= 20){
+        console.log(9);
         bg = loadImage("sunset10.png")
     }
 
     else if(hour >= 20 && hour <= 22){
+        console.log(10);
         bg = loadImage("sunset11.png")
     }
 
     else if(hour >= 22 && hour <= 01){
+        console.log(11);
         bg = loadImage("sunset12.png")
     }
 
